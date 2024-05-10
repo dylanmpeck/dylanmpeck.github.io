@@ -32,43 +32,43 @@ const Home = () => {
                 title="Re-O-Ri"
                 imageUrl="/re-o-ri.jpg"
                 role="Developer and Designer"
-                actionLink="/"
+                actionLink="/re-o-ri"
               />
               <ProjectCard
                 title="Beat Virus"
                 imageUrl="/beat-virus.png"
                 role="Developer and Designer"
-                actionLink="/"
+                actionLink="/beat-virus"
               />
               <ProjectCard
                 title="VR Bike"
                 imageUrl="/vr-bike.png"
                 role="Developer and Designer"
-                actionLink="/"
+                actionLink="/vr-bike"
               />
               <ProjectCard
                 title="RAB"
                 imageUrl="/rab.png"
                 role="Developer and Designer"
-                actionLink="/"
+                actionLink="/rab"
               />
               <ProjectCard
                 title="Tempus84"
                 imageUrl="/tempus84.jpg"
                 role="Contract Developer"
-                actionLink="/"
+                actionLink="/tempus84"
               />
               <ProjectCard
                 title="Wolf3D"
                 imageUrl="/wolf3d.png"
                 role="Developer, Designer, Audio"
-                actionLink="/"
+                actionLink="/wolf3d"
               />
               <ProjectCard
                 title="Pompadroid"
                 imageUrl="/pompadroid.png"
                 role="Developer, Designer, Audio"
-                actionLink="/"
+                actionLink="/pompadroid"
               />
           </Stack>
         </Paper>

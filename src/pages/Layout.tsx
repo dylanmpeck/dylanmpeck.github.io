@@ -1,7 +1,7 @@
 import React from 'react';
 import { theme } from '../components/theme';
 import { Outlet } from 'react-router-dom';
-import { ThemeProvider, CssBaseline, Box, AppBar, Typography, IconButton, Icon, Container, Divider } from '@mui/material';
+import { ThemeProvider, CssBaseline, Box, AppBar, Typography, IconButton, Icon, Container, Divider, Link } from '@mui/material';
 
 // Fixed width container + Theme + Header + Outlet (child components)
 const Layout = () => {
@@ -12,9 +12,11 @@ const Layout = () => {
                 <Box sx={{ flexGrow: 1 }}>
                     <AppBar position="static" style={{ background: 'linear-gradient(to bottom, #212229, #26272f, #2b2c35, #30313c, #353642)'}}>
                         <Box sx={{ m: 1 }}>
-                            <Typography variant="h3" color="text.secondary">
-                                Dylan Peck
-                            </Typography>
+                            <Link href="/" underline='none' color='inherit'>
+                                <Typography variant="h3" color="text.secondary">
+                                    Dylan Peck
+                                </Typography>
+                            </Link>
                             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <Typography variant="h5" color="text.primary">
                                 Game Developer and Game Designer
