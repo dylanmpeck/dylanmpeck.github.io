@@ -19,7 +19,7 @@ const Layout = () => {
                             </Link>
                             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <Typography variant="h5" color="text.primary">
-                                Game Developer and Game Designer
+                                Game Developer | Game Designer
                                 </Typography>
                                 <Box style={{ marginLeft: 'auto', display: 'inline-flex' }}>
                                     <IconButton href="https://www.linkedin.com/in/dylan-peck-b08160156">

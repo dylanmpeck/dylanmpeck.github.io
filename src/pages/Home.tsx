@@ -20,8 +20,8 @@ const Home = () => {
             </Typography>
           </Stack>
         </Box>
-        <Box sx={{ paddingTop: '2em'}}>
-          <Typography variant="h1" align='center' color="text.secondary">
+        <Box sx={{ paddingTop: '2em', overflowWrap: "break-word"}}>
+          <Typography variant="h2" align='left' color="text.secondary">
             Projects
           </Typography>
           <Divider sx={{ display: 'inline-block', bgcolor: "text.secondary", width: '100%', height: '2px', marginTop: 'auto', marginLeft: 'auto' }}/>

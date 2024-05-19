@@ -5,7 +5,7 @@ import Paragraph from '../components/Paragraph';
 const Pompadroid = () => {
     return (
         <Box>
-            <PageTitle name="Pompadroid" variant="h2" align="left"/>
+            <PageTitle name="Pompa Droid" variant="h2" align="left"/>
             <Box sx={{ padding: '1em', aspectRatio: '16 / 9' }}>
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/n4CmoxLUtxw?si=21zan-ImldhI3dMq" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </Box>

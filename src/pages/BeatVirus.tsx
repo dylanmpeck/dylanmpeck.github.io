@@ -17,7 +17,7 @@ const BeatVirus = () => {
             <Paragraph
                 content="In Beat Virus, multi colored germ-like enemies spawn to the beat of the music and float towards the player. In order to survive and score points, the player must fight back with two different colored projectile weapons and hit the the enemy with the matching color. On top of that, one will build a combo multiplier if he or she shoots the enemies on beat."
             />
-            <PageTitle name="Audio Visualization" variant='h3' align='left' />
+            <PageTitle name="Audio Visuals" variant='h3' align='left' />
             <Paragraph
                 content="My main goal with this was to explore audio visualization in Unity and how I could integrate it with mixed reality gameplay. In Beat Virus, almost every element of the world around the player is reacting to the music in some shape or form. To do this, I used Unity's built in Fast Fourier transform method which Unity calls GetSpectrumData."
             />
@@ -25,7 +25,7 @@ const BeatVirus = () => {
                 content="I pass in a samples float array of size 512 (samplesLeft and samplesRight in the above image) which is filled up with the audio spectrum data in the current timestamp. In this case, the whole frequency spectrum gets split up in 512 parts, or samples, from low to high accordingly and assigned to the samples float array. When reading the samples float array, higher values from a given index will represent bigger amplitudes for the corresponding frequency band."
             />
             <Box 
-                sx={{ padding: '1em'}}
+                sx={{ padding: '1em', width: '100%' }}
                 component='img'
                 src={process.env.PUBLIC_URL + '/FFTTest.gif'}
             />
@@ -33,7 +33,7 @@ const BeatVirus = () => {
                 content="So, thanks to Unity, a lot of hard work is done already, however, 512 different frequency bands is a bit difficult to work with, and GetSpectrumData() requires the length of the float array to be a power of 2 with a minimum of 64 where slightly larger float array lengths produce more pleasant results without hurting performance. At this point, it's up to the programmer how he or she wants to shape the data for the application, but I decided to condense it into 8 frequency bands (low to high). With this setup, kick and bass sounds would generally be in the first or second frequency band, and it wasn't too difficult to isolate mids and highs either. I used this math to separate them."
             />
             <Box 
-                sx={{ padding: '1em'}}
+                sx={{ padding: '1em', width: '100%'}}
                 component='img'
                 src={process.env.PUBLIC_URL + '/FreqMath.png'}
             />
@@ -50,12 +50,12 @@ const BeatVirus = () => {
                 content="After doing these calculations, I'm able to multiply the frequency band, audio band, or average of the entire audio band array (which gives me overall amplitude) with any parameter to get cool audio visualization effects. The results are seen in the game with the tunnel warping to the kick drums, the tunnel's colors shifting to the beat, and the enemies bouncing around to different frequency bands."
             />
             <Box 
-                sx={{ padding: '1em'}}
+                sx={{ padding: '1em', width: '100%'}}
                 component='img'
                 src={process.env.PUBLIC_URL + '/Tunnel.gif'}
             />
                         <Box 
-                sx={{ padding: '1em'}}
+                sx={{ padding: '1em', width: '100%'}}
                 component='img'
                 src={process.env.PUBLIC_URL + '/Ball.gif'}
             />

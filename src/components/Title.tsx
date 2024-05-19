@@ -8,7 +8,7 @@ export interface TitleProps {
 
 const PageTitle = (props: TitleProps) => {
     return (
-        <Box sx={{ paddingTop: '2em'}}>
+        <Box sx={{ paddingTop: '2em', overflowWrap: 'break-word' }}>
             <Typography variant={props.variant} align={props.align} color="text.secondary">
                 {props.name}
             </Typography>

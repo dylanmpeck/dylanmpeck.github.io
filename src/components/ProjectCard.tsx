@@ -1,4 +1,13 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
+import { useState, useEffect } from 'react';
+
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  }
 
 interface CardProps {
     title: string;
@@ -8,6 +17,18 @@ interface CardProps {
   }
   
 const ProjectCard = (props: CardProps) => {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+        function handleResize() {
+          setWindowDimensions(getWindowDimensions());
+          console.log(windowDimensions.width);
+        }
+    
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+
     return (
         <Card
             raised={false}
@@ -31,9 +52,10 @@ const ProjectCard = (props: CardProps) => {
                             bgcolor: 'rgba(0, 0, 0, 0.54)',
                             color: 'white',
                             padding: '10px',
+                            overflow: 'hidden',
                         }}
                     >
-                        <Typography gutterBottom variant="h3" component="div">
+                        <Typography gutterBottom variant={windowDimensions.width <= 500 ? "h4" : "h3"} component="div">
                             {props.title}
                         </Typography>
                     </Box>
