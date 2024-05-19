@@ -11,7 +11,7 @@ const Pompadroid = () => {
             </Box>
             <PageTitle name="Overview" variant="h3" align="left" />
             <Paragraph
-                content="A simple 2D beat em up game made in Unity using assets and instructions from a Ray Wenderlich tutorial series found here: https://www.raywenderlich.com/5568-unity-beat-em-up-game-tutorial-getting-started"
+                content={<a href="https://www.raywenderlich.com/5568-unity-beat-em-up-game-tutorial-getting-started">A simple 2D beat em up game made in Unity using assets and instructions from a Ray Wenderlich tutorial series.</a>}
             />
             <Paragraph
                 content="This project was a means of exploring and learning the Unity engine better. Assets and walkthrough were provided by tutorial. Music is original and created by me."
