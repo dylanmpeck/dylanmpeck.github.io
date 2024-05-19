@@ -31,31 +31,31 @@ const Home = () => {
               title="Re-O-Ri"
               imageUrl="/re-o-ri.jpg"
               role="Developer and Designer"
-              actionLink="/re-o-ri"
+              actionLink="/#/re-o-ri"
             />
             <ProjectCard
               title="Beat Virus"
               imageUrl="/beat-virus.png"
               role="Developer and Designer"
-              actionLink="/beat-virus"
+              actionLink="/#/beat-virus"
             />
             <ProjectCard
               title="VR Bike"
               imageUrl="/vr-bike.png"
               role="Developer and Designer"
-              actionLink="/vr-bike"
+              actionLink="/#/vr-bike"
             />
             <ProjectCard
               title="Wolf3D"
               imageUrl="/wolf3d.png"
               role="Developer, Designer, Audio"
-              actionLink="/wolf3d"
+              actionLink="/#/wolf3d"
             />
             <ProjectCard
               title="Pompadroid"
               imageUrl="/pompadroid.png"
               role="Developer, Designer, Audio"
-              actionLink="/pompadroid"
+              actionLink="/#/pompadroid"
             />
         </Stack>
       </Box>

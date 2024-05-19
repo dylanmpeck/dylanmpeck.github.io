@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Layout from './pages/Layout';
 import ReORi from './pages/ReORi';
@@ -10,7 +10,7 @@ import Pompadroid from './pages/Pompadroid';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="/pompadroid" element={<Pompadroid />} />
         </Route>
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 

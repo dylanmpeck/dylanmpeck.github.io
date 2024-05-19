@@ -13,7 +13,7 @@ const ProjectCard = (props: CardProps) => {
             raised={false}
             square={true}
         >
-            <CardActionArea href={props.actionLink}>
+            <CardActionArea href={props.actionLink} action={() => {window.scrollTo(0, 0)}}>
                 <Box sx={{ position: 'relative'}}>
                     <CardMedia
                     component="img"
