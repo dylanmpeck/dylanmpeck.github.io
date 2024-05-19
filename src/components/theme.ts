@@ -10,5 +10,8 @@ export const theme = createTheme({
         primary: '#999',
         secondary: '#0b90ce',
       }
+    },
+    typography: {
+      fontFamily: '"Roboto Mono", monospace',
     }
   })

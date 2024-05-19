@@ -1,7 +1,7 @@
 import React from 'react';
 import { theme } from '../components/theme';
 import { Outlet } from 'react-router-dom';
-import { ThemeProvider, CssBaseline, Box, AppBar, Typography, IconButton, Icon, Container, Divider, Link } from '@mui/material';
+import { ThemeProvider, CssBaseline, Box, AppBar, Typography, IconButton, Icon, Container, Divider, Link, Paper } from '@mui/material';
 
 // Fixed width container + Theme + Header + Outlet (child components)
 const Layout = () => {
@@ -38,7 +38,9 @@ const Layout = () => {
                     </AppBar>
                 </Box>
                 <Divider sx={{ bgcolor: "text.secondary", width: '100%', height: '4px', marginTop: 'auto', marginLeft: 'auto' }}/>
-                <Outlet />
+                <Paper elevation={3} sx={{ padding: "2em"}}>
+                    <Outlet />
+                </Paper>
             </ThemeProvider>
         </Container>
     );
