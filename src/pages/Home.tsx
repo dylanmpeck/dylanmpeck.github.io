@@ -1,7 +1,8 @@
-import { Box, Divider, Paper, Stack, Typography } from "@mui/material";
+import { Box, Divider, Stack, Typography } from "@mui/material";
 import ProjectCard from "../components/ProjectCard";
 
 const Home = () => {
+    window.scrollTo(0, 0);
     return (
       <Box>
         <Box sx={{  }}>

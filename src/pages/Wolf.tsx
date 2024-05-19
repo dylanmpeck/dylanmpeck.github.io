@@ -3,6 +3,7 @@ import PageTitle from '../components/Title';
 import Paragraph from '../components/Paragraph';
 
 const Wolf3D = () => {
+    window.scrollTo(0, 0);
     return (
         <Box>
             <PageTitle name="Wolf3D" variant="h2" align="left"/>

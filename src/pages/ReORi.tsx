@@ -3,6 +3,7 @@ import PageTitle from '../components/Title';
 import Paragraph from '../components/Paragraph';
 
 const ReORi = () => {
+    window.scrollTo(0, 0);
     return (
         <Box>
             <PageTitle name="Re-O-Ri" variant="h2" align="left"/>

@@ -3,6 +3,7 @@ import PageTitle from '../components/Title';
 import Paragraph from '../components/Paragraph';
 
 const Pompadroid = () => {
+    window.scrollTo(0, 0);
     return (
         <Box>
             <PageTitle name="Pompa Droid" variant="h2" align="left"/>

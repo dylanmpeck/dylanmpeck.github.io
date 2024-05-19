@@ -4,6 +4,7 @@ import Paragraph from '../components/Paragraph';
 
 
 const BeatVirus = () => {
+    window.scrollTo(0, 0);
     return (
         <Box>
             <PageTitle name="Beat Virus" variant='h2' align='left' />

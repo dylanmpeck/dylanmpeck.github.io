@@ -22,7 +22,6 @@ const ProjectCard = (props: CardProps) => {
     useEffect(() => {
         function handleResize() {
           setWindowDimensions(getWindowDimensions());
-          console.log(windowDimensions.width);
         }
     
         window.addEventListener('resize', handleResize);
@@ -34,7 +33,7 @@ const ProjectCard = (props: CardProps) => {
             raised={false}
             square={true}
         >
-            <CardActionArea href={props.actionLink} action={() => {window.scrollTo(0, 0)}}>
+            <CardActionArea href={props.actionLink}>
                 <Box sx={{ position: 'relative'}}>
                     <CardMedia
                     component="img"

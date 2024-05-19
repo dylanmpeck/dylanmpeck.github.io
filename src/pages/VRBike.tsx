@@ -3,6 +3,7 @@ import Paragraph from '../components/Paragraph';
 import PageTitle from '../components/Title';
 
 const VRBike = () => {
+    window.scrollTo(0, 0);
     return (
         <Box>
             <PageTitle name="VR Bike" variant="h2" align="left"/>
